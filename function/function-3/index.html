@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function-3</title>
+</head>
+
+<body>
+	<script>
+
+
+		//3) Сформировать из введенного числа обратное по порядку входящих в него цифр и вывести на экран.
+		//Например, если введено число 3486, то надо вывести число 6843.
+
+
+
+		function showReverse(num) {
+			let numReverse = 0;
+
+			while (num) {
+				numReverse *= 10;
+				numReverse += num % 10;
+				num = parseInt(num / 10)
+			}
+			return numReverse;
+		}
+
+		console.log(showReverse(3486));
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+
+</html>

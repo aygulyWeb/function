@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function-4</title>
+</head>
+
+<body>
+	<script>
+
+
+		//4) Найти сумму и произведение цифр, введенного натурального числа. 
+		//Например, если введено число 325, то сумма его цифр равна 10 (3+2+5), 
+		//а произведение 30 (3*2*5).
+
+
+		function findSumm(num) {
+
+			let numReverse, plus = 0, multi = 1;
+
+			while (num > 0) {
+				numReverse = num % 10;
+				plus += numReverse;
+				multi *= numReverse;
+				num = parseInt(num / 10)
+
+			}
+			return plus;
+		}
+
+		console.log(findSumm(325));
+
+
+
+
+
+
+	</script>
+</body>
+
+</html>
