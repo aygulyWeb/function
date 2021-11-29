@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function-165</title>
+</head>
+
+<body>
+	<script>
+
+		//16) Напишите if..else, соответствующий следующему switch:
+		//switch (browser) {
+		// case 'Edge':
+		//  alert( "You've got the Edge!" );
+		//   break;
+		//  case 'Chrome':
+		//  case 'Firefox':
+		// case 'Safari':
+		// case 'Opera':
+		//  alert( 'Okay we support these browsers too' );
+		//  break;
+		//  default:
+		//   alert( 'We hope that this page looks ok!' );}
+
+
+		function getName(browser) {
+			if (browser == 'Edge') {
+				return ("You've got the Edge!");
+			} else if (browser == 'Chrome' || browser == 'Firefox' || browser == 'Safari' || browser == 'Opera') {
+				return ('Okay we support these browsers too');
+			} else {
+				return ('We hope that this page looks ok!');
+			}
+		}
+		console.log(getName('Edge'));
+		console.log(getName('Chrome'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function-22</title>
+</head>
+
+<body>
+	<script>
+		//22) Составьте программу, которая принимает с клавиатуры целые числа,
+		// пока не будут введены друг за другом два одинаковых числа. 
+		//Программа должна вывести на экран сообщение о равенстве чисел, 
+		//а также сумму этих чисел.
+
+		function getSumma() {
+			let num, nextNum, summa;
+
+			num = +prompt('Введите числа: ');
+			summa = num + nextNum;
+
+			while (num != nextNum) {
+				num = nextNum;
+				nextNum = +prompt('Введите число');
+				summa = num + nextNum;
+			}
+			return `числа равны и их сумма - ${summa}`;
+
+		}
+		console.log(getSumma());
+
+
+
+
+
+
+
+	</script>
+</body>
+
+</html>

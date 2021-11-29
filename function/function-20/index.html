@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function-20</title>
+</head>
+
+<body>
+	<script>
+
+		//20) Составьте программу, которая принимает с клавиатуры числа, пока их сумма остается меньше 100. 
+		//По окончании ввода следует вывести на экран информацию о количестве введенных чисел и их сумме.
+
+		function getNum() {
+			var num, count = 0, sum = 0;
+
+			while (sum < 100) {
+				num = +prompt('Введите числа:');
+				count++;
+				sum += num;
+			}
+			return count;
+		}
+		console.log(getNum());
+
+
+		// function getSumm() {
+		// 	var num, count = 0, sum = 0;
+
+		// 	while (sum < 100) {
+		// 		num = +prompt('Введите числа:');
+		// 		count++;
+		// 		sum += num;
+		// 	}
+		// 	return sum;
+		// }
+		// console.log(getSumm());
+
+
+
+
+
+	</script>
+</body>
+
+</html>

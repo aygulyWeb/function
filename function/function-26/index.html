@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function-26</title>
+</head>
+
+<body>
+	<script>
+
+		//26) Составьте программу, которая принимает с клавиатуры целое число и, если оно соответствует оценке ученика, выводит
+		// на экран соответствующую «текстовую форму оценки» 
+		//(1 или 2 – «неудовлетворительно», 3 – «удовлетворительно», 4 – «хорошо», 5 – «отлично»). В случае, 
+		//если число не является оценкой, следует вывести на экран соответствующее текстовое сообщение.
+		// ввод: 5 ⇒ вывод: отлично; ввод: 6 ⇒ вывод: это не оценка)
+
+
+		function getNum(num) {
+
+			switch (num) {
+				case 1:
+				case 2: {
+					return 'Неудовлетворительно'
+					break;
+				}
+				case 3:
+					{
+						return 'Удовлетворительно';
+						break;
+					}
+				case 4:
+					{
+						return 'Хороший';
+						break;
+					}
+				case 5:
+					{
+						return 'Отлично';
+						break;
+					}
+				default:
+					return 'Это не оценка'
+
+			}
+
+
+		}
+		console.log(getNum(5));
+		console.log(getNum(4));
+		console.log(getNum(3));
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+
+</html>

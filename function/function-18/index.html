@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function-18</title>
+</head>
+
+<body>
+	<script>
+
+		//18) Составьте программу, которая принимает с клавиатуры числа, пока не будет введено значение 0. 
+		//Для каждого введенного с клавиатуры положительного числа, программа должна выводить на экран "плюс", 
+		//для каждого отрицательного – "минус".
+
+		function getNum() {
+
+			var num, count = 0;
+
+			while (num != 0) {
+				num = +prompt('Введите числа:');
+				count++;
+			}
+			if (num >= 0) {
+				alert('Плюс')
+			} else (
+				alert('Минус')
+			)
+			return num;
+
+		}
+		getNum();
+
+
+
+	</script>
+</body>
+
+</html>

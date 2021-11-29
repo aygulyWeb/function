@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function-25</title>
+</head>
+
+<body>
+	<script>
+
+		//25) Составьте программу, которая принимает с клавиатуры количество очков, полученых в соревнованиях 
+		//по стрельбе каждым из 10 учеников класса, и выводит на экран лучший результат.
+		//ввод: 92, 75, 83, 82, 96, 81, 88, 76, 93, 78 ⇒ вывод: лучший результат - 96 очков)////////////////////////////////
+
+
+		function getNum() {
+			var num, max = 0;
+
+			for (var i = 1; i < 10; i++) {
+				num = +prompt('Введите число: ');
+				console.log(num);
+
+				if (num > max) max = num;
+			}
+			return `лучший результат ${max} очков`;
+
+		}
+
+		console.log(getNum());
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+
+</html>

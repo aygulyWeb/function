@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function-12</title>
+</head>
+
+<body>
+	<script>
+
+		//12)Напишите условие if для проверки, что значение переменной
+		//age НЕ находится в диапазоне 14 и 90 включительно.
+
+
+
+		function getAge(age) {
+
+			if (14 > age || age > 90) {
+				return ('Не находится в диапазоне 14 и 90')
+			}
+			else {
+				return (age + 'находится в диапазоне 14 и 90')
+			}
+			if (!(14 < age && age < 90)) {
+				return (age + 'не находится в диапазоне 14 и 90')
+			}
+			else {
+				return (age + 'находится в диапазоне 14 и 90')
+			}
+
+		}
+
+		console.log(getAge(15));
+		console.log(getAge(10));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+
+</html>

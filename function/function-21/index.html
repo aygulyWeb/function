@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function-21</title>
+</head>
+
+<body>
+	<script>
+
+		//21) Составьте программу, которая принимает с клавиатуры целое число, 
+		//а затем выводит на экран последующие ему целые числа, 
+		//пока сумма этих чисел не превышает квадрата введённого числа.
+
+
+		function getSumma() {
+			var summa = 0;
+			var num = parseFloat(prompt('Введите число'));;
+			var nextNum;
+			nextNum = num;
+			while (summa <= Math.pow(num, 2)) {
+				nextNum = nextNum + 1;
+				console.log(nextNum);
+				summa = summa + nextNum;
+			}
+			return summa;
+		}
+		console.log(getSumma())
+
+
+
+
+	</script>
+</body>
+
+</html>

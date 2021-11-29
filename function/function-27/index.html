@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function-27</title>
+</head>
+
+<body>
+	<script>
+		//27) Составьте программу, которая принимает с клавиатуры целое число, соответствующее порядковому номеру месяца. 
+		//В случае, если полученное значение равно порядковому номеру одного из месяцев, следует вывести сезон (лето, осень, зима, весна),
+		//к которому относится месяц. 
+		//В случае, если введенное значение не является порядковым номером месяца, следует вывести на экран сообщение об ошибке.
+
+
+		function getNum(num) {
+
+			switch (num) {
+				case 12:
+				case 1:
+				case 2: {
+					return 'Зима';
+					break;
+				}
+				case 3:
+				case 4:
+				case 5:
+					{
+						return 'Весна';
+						break;
+					}
+				case 6:
+				case 7:
+				case 8:
+					{
+						return 'Лето';
+						break;
+					}
+				case 9:
+				case 10:
+				case 11:
+					{
+						return 'Осень';
+						break;
+					}
+				default:
+					return 'Ошибка';
+
+
+			}
+
+		}
+
+		console.log(getNum(5));
+
+		console.log(getNum(12));
+
+		console.log(getNum(13));
+
+
+	</script>
+</body>
+
+</html>

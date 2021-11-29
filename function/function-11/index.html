@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function-11</title>
+</head>
+
+<body>
+	<script>
+
+		//11) Организовать беспрерывный ввод чисел с клавиатуры, пока пользователь не введёт 0. После ввода нуля, 
+		//показать на экран количество чисел, которые были введены, их общую сумму и среднее арифметическое. 
+		//Подсказка: необходимо объявить переменную-счетчик, которая будет считать количество введенных чисел, и переменную,
+		// которая будет накапливать общую сумму чисел.
+
+
+		function getSumm() {
+			let count = 0, num, summ = 0;
+
+			while (num != 0) {
+				num = +prompt('Введите числа:');
+				count++;
+				summ += num;
+			}
+			return summ;
+		}
+
+		console.log(getSumm());
+
+		function getArif() {
+			let count = 0, num, summ = 0, arif = 0;
+
+			while (num != 0) {
+				num = +prompt('Введите числа:');
+				count++;
+				summ += num;
+				arif = summ / (count - 1);
+			}
+			return arif;
+		}
+
+		console.log(getArif());
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+
+</html>

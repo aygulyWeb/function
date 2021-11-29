@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function-14</title>
+</head>
+
+<body>
+	<script>
+
+		//14 Пользователь вводит подряд 20 разных чисел(ввод осуществляется всех чисел только в 1 переменную),
+		//нужно посчитать сколько было инверсий. Пример:
+		//5 2 5 3 6 4 8 9 2 4 1 6 8 5 4 7 9 7 1 5 = 9 инверсий, 
+		//к примеру 5 2 - это инверсия то есть то число которое стоит 
+		//слева больше того числа которое справа.
+
+
+
+		function getInvers() {
+			var num, nextNum = 0, count = 0, i = 0;
+			while (i <= 5) {
+				num = +prompt('Введите числа: ')
+				if (nextNum > num) {
+					count++;
+				}
+				i++;
+				nextNum = num;
+
+			}
+			return count;
+		}
+
+		console.log(getInvers())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+
+</html>

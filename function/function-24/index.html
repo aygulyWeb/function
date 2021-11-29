@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function-24</title>
+</head>
+
+<body>
+	<script>
+
+		//24) Составьте программу, которая принимает с клавиатуры целое число,
+		// а затем проверяет, можно ли представить его
+		//в виде суммы квадратов двух целых однозначных чисел.
+		// ввод: 98 ⇒ вывод: 98 можно представить в виде суммы квадратов 7 и 7)
+
+		function getNum() {
+			var num, count, sum = 0, mult = 0;
+
+			num = +prompt('Enter number: ');
+			mult = num / 2;
+
+			for (var i = 1; i <= mult; i++) {
+				count = i;
+				if (i < 2) continue;
+				sum = mult % i;
+				if (sum == 0) break;
+			}
+			return `${num} можно представить в виде суммы квадрата  ${count}  и  ${count}`
+		}
+		console.log(getNum());
+
+
+
+
+
+
+
+	</script>
+</body>
+
+</html>

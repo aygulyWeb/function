@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function-8</title>
+</head>
+
+<body>
+	<script>
+
+		//8) Вывести на экран столько элементов ряда Фибоначчи, 
+		// сколько указал пользователь. 
+		// Например, если на ввод поступило число 6, 
+		// то вывод должен содержать шесть первых чисел ряда Фибоначчи: 1 2 3 5 8 13.
+
+
+		function countFibo() {
+			let one = 0, two = 1, current;
+
+			for (let i = 1; i < 7; i++) {
+				current = one + two;
+				one = two;
+				two = current;
+
+				console.log(current);
+			}
+
+			return current;
+
+		}
+
+		console.log(countFibo(6));
+
+
+
+	</script>
+</body>
+
+</html>

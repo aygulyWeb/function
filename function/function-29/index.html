@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>function-29</title>
+</head>
+
+<body>
+	<script>
+
+		//29) Составьте программу, которая принимает с клавиатуры три числа и проверяет, 
+		//являются ли эти числа углами одного и того же треугольника. 
+		//По результатам проверки следует вывести на экран соответствующее текстовое сообщение.
+		//ввод: 90, 30, 60 ⇒ вывод: это треугольник; ввод: 90, 0, 90 ⇒ вывод: это не треугольник)////
+
+		function getTriangle() {
+			var a = +prompt('Введите 1-й угол треугольника');
+			var b = +prompt('Введите 2-й угол треугольника');
+			var c = +prompt('Введите 3-й угол треугольника');
+
+			return (a + b + c == 180 && a * b * c != 0) ? 'это треугольник' : 'это не треугольник'
+
+		}
+
+		console.log(getTriangle());
+
+	</script>
+</body>
+
+</html>
